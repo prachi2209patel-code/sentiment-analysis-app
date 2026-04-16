@@ -1,14 +1,13 @@
+
 import nltk
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except:
-    nltk.download('punkt')
-
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 import streamlit as st
 import joblib
 import re
-import nltk
+
 
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize

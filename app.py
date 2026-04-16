@@ -1,4 +1,9 @@
+import nltk
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except:
+    nltk.download('punkt')
 
 import streamlit as st
 import joblib
